@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.page{
+    background: url(../img/landing-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.page .text{
+    color: #fff;
+}
+.page .text span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.page .text h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+}
+.page .text p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.3333333333em;
+    font-weight: 500;
+}
+.page .box .button{
+    display: flex;
+    justify-content: center;
+}
+.page .box .button .l-btn,
+.page .box .button .r-btn{
+    width: 180px;
+    height: 54px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out,color .3s ease-in-out;
+}
+.page .box .button .l-btn{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.page .box .button .r-btn{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.page .box .button .active,
+.page .box .button .active{
+    color: #3e3f5e;
+    background-color: #fff;
+    cursor: auto;
+}
+.page .form{
+    position: relative;
+    background: #fff;
+    margin: 130px 60px;
+    border-radius: 12px;
+    padding: 80px 60px;
+}
+.page .form img{
+    position: absolute;
+    top: -40px;
+    left: -50px;
+    width: 120px;
+}
+.page .form h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.625rem;
+    font-weight: bolder;
+}
+.page .form input[type="password"], input[type="email"], input[type="text"] {
+    height: 54px;
+    padding: 0 18px;
+    margin: 30px 0;
+}
+.page .form button{
+    width: 100%;
+}
+#register{
+    display: none;
+}
+
+@media(max-width: 519px){
+    .page .form{
+        padding: 60px 40px;
+        margin: 100px 30px;
+    }
+    .page .box .button .l-btn,
+    .page .box .button .r-btn{
+        width: 120px;
+        height: 54px;
+    }
+}
+@media(max-width: 436px){
+    .page .text h1 {
+        font-size: 3rem;
+    }
+}
